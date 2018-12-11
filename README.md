@@ -30,7 +30,7 @@ Example usage:
 
 ```hcl
 module "dev_db_encrypted" {
-  source            = "github.com/diogoaurelio/terraform-module-aws-storage-rds-encrypted"
+  source            = "bitbucket.org/geanalytics/terraform-module-aws-storage-rds-encrypted"
   version           = "v0.0.1"
 
   environment       = "dev"
