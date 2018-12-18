@@ -75,3 +75,7 @@ variable "income_cidr_blocks" {
 variable "secrets_kms_keys_deletion_window_in_days" {
   default = 10
 }
+
+variable "parameter_group_family" {
+  default = "postgres10"
+}

@@ -14,6 +14,10 @@ output "aws_db_instance_address" {
   value = "${aws_db_instance.this.address}"
 }
 
+output "aws_db_instance_port" {
+  value = "${aws_db_instance.this.port}"
+}
+
 output "aws_db_instance_endpoint" {
   value = "${aws_db_instance.this.endpoint}"
 }

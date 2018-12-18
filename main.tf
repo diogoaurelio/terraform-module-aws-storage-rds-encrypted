@@ -105,6 +105,8 @@ resource "aws_db_parameter_group" "this" {
   name = "${local.base_name}-cluster"
 
   # example fmaily: family = postgres9.6
-  family      = "${var.engine}${element(split(".",var.engine_version), 0)}.${element(split(".",var.engine_version), 1)}"
+  #family      = "${var.engine}${element(split(".",var.engine_version), 0)}.${element(split(".",var.engine_version), 1)}"
+  family = "${var.parameter_group_family}"
+
   description = "${local.base_name} - parameter group"
 }
